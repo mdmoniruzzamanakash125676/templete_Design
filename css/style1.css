@@ -1,0 +1,143 @@
+ /* common css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .container {
+    width: 1140px;
+    margin: 0 auto;
+  }
+  
+  body {
+    font-family: "Inter", sans-serif;
+  }
+  .btn {
+    border-radius: 10px;
+    background-color: #5956e8;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    padding: 13px 19px;
+  }
+  .para {
+    font-size: 16;
+    font-weight: 400;
+    color: rgba(24, 24, 24, 0.7);
+    line-height: 27px;
+  }
+  
+  .box_para {
+    width: 542px;
+    padding: 20px 0;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .heading {
+    color: #181818;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  
+  .heading_item {
+    color: #181818;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  /* common css end */
+
+/* navbar start  */
+  #navbar {
+    margin: 30px 0;
+  }
+  #navbar .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #navbar .main .menu ul {
+    display: flex;
+    align-items: center;
+  }
+  #navbar .main .menu ul li {
+    margin-left: 30px;
+    position: relative;
+  }
+  #navbar .main .menu ul li a {
+    color: #181818;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.4s;
+  }
+  #navbar .main .menu ul  i {
+    font-size: 5px;
+    position: absolute;
+    color: #5956e8;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.4s;
+    opacity: 0;
+  }
+  #navbar .main .menu ul li a:hover {
+    color: #5956e8;
+  }
+  #navbar .main .menu ul li a:hover i {
+    opacity: 1;
+    top: -10px;
+  }
+  #navbar .main .menu .dropdown {
+    display:block;
+    position: absolute;
+    width: 100px;
+    background-color: #fff;
+    top: 30px;
+    left: -15px;
+    transition: 0.4s;
+    transition-delay: 0.2s;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  #navbar .main .menu .dropdown li {
+    margin-left: 0px;
+    margin: 10px 0;
+    padding-left: 10px;
+  }
+  #navbar .main .menu li:hover .dropdown {
+    transform: scaleY(1);
+  }
+  #navbar .main .menu li:hover i {
+    opacity: 1;
+    top: -10px;
+  }
+  
+  /* navbar end  */
+
+/* banner start  */
+
+#banner {
+    padding: 180px 0;
+    background-color: #5956e8;
+  }
+  #banner .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #banner .main .text {
+    width: 43%;
+  }
+  
